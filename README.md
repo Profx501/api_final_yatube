@@ -1,23 +1,50 @@
-# api_final
-Проект «API для Yatube»
+# Проект API для социальной сети Yatube
 
-Как запустить проект:
+### Описание
+Незарегистрированные пользователи могут просматривать посты, комментарии, группы проекта.
+Для зарегистрированных пользователей доступны подписка на понравившихся авторов,
+добавление постов, комментариев, а также удаление и редактирование собственных публикаций
+и комментариев.
 
-1. Cоздать и активировать виртуальное окружение:
+### Как запустить проект:
 
-    python3 -m venv env
+Клонировать репозиторий,
+cоздать и активировать виртуальное окружение:
+
+```
+python3 -m venv venv
+```
+
+* Если у вас Linux/macOS
+
+    ```
     source env/bin/activate
+    ```
 
-2. Установить зависимости из файла requirements.txt:
+* Если у вас windows
 
-    python3 -m pip install --upgrade pip
-    pip install -r requirements.txt
+    ```
+    source venv/scripts/activate
+    ```
 
-3. Выполнить миграции:
+```
+python3 -m pip install --upgrade pip
+```
 
-    python3 manage.py migrate
+Установить зависимости из файла requirements.txt:
 
-4. Запустить проект:
+```
+pip install -r requirements.txt
+```
 
-   python3 manage.py runserver
+Выполнить миграции:
 
+```
+python3 manage.py migrate
+```
+
+Запустить проект:
+
+```
+python3 manage.py runserver
+```
